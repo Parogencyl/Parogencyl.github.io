@@ -446,13 +446,6 @@ h2 {
   font-size: 18px;
 }
 
-#contactInformation p:nth-last-child(1) {
-  text-decoration: underline;
-  font-weight: 600;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
 @media screen and (max-width: 1150px) {
   #boxes1,
   #boxes2 {
