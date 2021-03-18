@@ -311,8 +311,9 @@ h2 {
   margin-top: 100px;
 }
 
-#boxes {
-  margin-top: 80px;
+#boxes1,
+#boxes2 {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,24 +373,28 @@ h2 {
   border-radius: 5px;
 }
 
-.projectBox:nth-of-type(1) .projectImage {
+#boxes1 .projectBox:nth-of-type(1) .projectImage {
   background-image: url(images/zubczynscy.png);
 }
 
-.projectBox:nth-of-type(2) .projectImage {
-  background-image: url(images/pixelwarriors.png);
-}
-
-.projectBox:nth-of-type(3) .projectImage {
+#boxes1 .projectBox:nth-of-type(2) .projectImage {
   background-image: url(images/kwenergysolutions.png);
 }
 
-.projectBox:nth-of-type(4) .projectImage {
+#boxes1 .projectBox:nth-of-type(3) .projectImage {
   background-image: url(images/newbou.png);
 }
 
-.projectBox:nth-of-type(5) .projectImage {
+#boxes1 .projectBox:nth-of-type(4) .projectImage {
   background-image: url(images/graphic-designer.png);
+}
+
+#boxes2 .projectBox:nth-of-type(1) .projectImage {
+  background-image: url(images/arnet-meble-sklep.png);
+}
+
+#boxes2 .projectBox:nth-of-type(2) .projectImage {
+  background-image: url(images/projekt-kultura.png);
 }
 
 .projectImage a {
@@ -449,7 +454,8 @@ h2 {
 }
 
 @media screen and (max-width: 1150px) {
-  #boxes {
+  #boxes1,
+  #boxes2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -550,7 +556,8 @@ h2 {
 }
 
 @media screen and (max-width: 700px) {
-  #boxes {
+  #boxes1,
+  #boxes2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .projectBox {
